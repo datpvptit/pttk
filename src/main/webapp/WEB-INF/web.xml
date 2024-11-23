@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <welcome-file-list>
+        <welcome-file>GDDangNhap218.jsp</welcome-file>
+        <!-- Bạn có thể thêm nhiều trang khác nếu cần -->
+    </welcome-file-list>
+
+    <!-- Khách hàng-->
+    <servlet>
+        <servlet-name>GDChinhKhachHangServlet</servlet-name>
+        <jsp-file>/GDChinhKhachHang218.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GDChinhKhachHangServlet</servlet-name>
+        <url-pattern>/khách-hàng</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GDDatLichHenServlet</servlet-name>
+        <jsp-file>/GDDatLichHen218.jsp</jsp-file> <!-- Path to your JSP file -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GDDatLichHenServlet</servlet-name>
+        <url-pattern>/khách-hàng/đặt-lịch-hẹn-trực-tuyến</url-pattern> <!-- Define the URL -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GDChinhNVQLServlet</servlet-name>
+        <jsp-file>/GDChinhNVQL218.jsp</jsp-file> <!-- Path to your JSP file -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GDChinhNVQLServlet</servlet-name>
+        <url-pattern>/quản-lý</url-pattern> <!-- Define the URL -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GDXemBaoCaoServlet</servlet-name>
+        <jsp-file>/GDXemBaoCao218.jsp</jsp-file> <!-- Path to your JSP file -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GDXemBaoCaoServlet</servlet-name>
+        <url-pattern>/quản-lý/xem-báo-cáo</url-pattern> <!-- Define the URL -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GDTKNCCTheoLuongHangNhapServlet</servlet-name>
+        <jsp-file>/GDTKNCCTheoLuongHangNhap218.jsp</jsp-file> <!-- Path to your JSP file -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GDTKNCCTheoLuongHangNhapServlet</servlet-name>
+        <url-pattern>/quản-lý/xem-báo-cáo/thống-kê-nhà-cung-cấp</url-pattern> <!-- Define the URL -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GDChiTietNCC218Servlet</servlet-name>
+        <jsp-file>/GDChiTietNCC218.jsp</jsp-file> <!-- Path to your JSP file -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GDChiTietNCC218Servlet</servlet-name>
+        <url-pattern>/quản-lý/xem-báo-cáo/chi-tiết-nhà-cung-cấp</url-pattern> <!-- Define the URL -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GDChiTietHoaDonNhapServlet</servlet-name>
+        <jsp-file>/GDChiTietHoaDonNhap218.jsp</jsp-file> <!-- Path to your JSP file -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GDChiTietHoaDonNhapServlet</servlet-name>
+        <url-pattern>/quản-lý/xem-báo-cáo/chi-tiết-hóa-đơn-nhập</url-pattern> <!-- Define the URL -->
+    </servlet-mapping>
+</web-app>
